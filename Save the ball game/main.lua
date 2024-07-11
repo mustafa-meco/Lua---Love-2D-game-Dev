@@ -1,6 +1,7 @@
 local love = require "love"
 
 local game = {
+    difficulty = 1,
     state = {
         menu = false,
         paused = true,
@@ -14,6 +15,8 @@ local player = {
     x = 30,
     y = 30
 }
+
+local enemies = {}
 
 function love.load()
     love.window.setTitle("Save the ball")
